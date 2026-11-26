@@ -230,19 +230,12 @@ def risk_level(p):
         return "med", "🟠 MEDIUM RISK", "Route to support for follow-up and tag the related feature owner."
     return "low", "🟢 LOW RISK", "No escalation needed. Monitor for similar patterns."
 
-
-  def recommendations(text):
+def recommendations(text):
     t = text.lower()
+    recs = [f"• **{k}** detected: assign to the owning squad and check the last release." for k, rx in ISSUES.items() if re.search(rx, t)]
+    return recs or ["• No specific failure category detected: review manually and respond with an apology + support link."]
+   
 
-    recs = [
-        f"• **{k}** detected: assign to the owning squad and check the last release."
-        for k, rx in ISSUES.items()
-        if re.search(rx, t)
-    ]
-
-    return recs or [
-        "• No specific failure category detected: review manually and respond with an apology + support link."
-    ]
 
 Copied from: Editing apppulse-competitor-intelligence/app.py at main · doniaimad22-hue/apppulse-competitor-intelligence - <https://github.com/doniaimad22-hue/apppulse-competitor-intelligence/edit/main/app.py>
 
