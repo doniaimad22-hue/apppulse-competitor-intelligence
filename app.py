@@ -234,8 +234,7 @@ def risk_level(p):
 def recommendations(text):
     t = text.lower()
     recs = [f"• **{k}** detected: assign to the owning squad and check the last release." for k, rx in ISSUES.items() if re.search(rx, t)]
-    return recs or ["• No specific failure category detected: review manually and respond with an apology + support link."]
-
+         return recs or ["• No specific failure category detected. No action needed unless a manual read shows a genuine complaint."]
 
 def offline_report(df, summ, issues, primary):
     comps = summ[summ.app_name != primary]
