@@ -236,9 +236,6 @@ def recommendations(text):
     return recs or ["• No specific failure category detected: review manually and respond with an apology + support link."]
    
 
-
-Copied from: Editing apppulse-competitor-intelligence/app.py at main · doniaimad22-hue/apppulse-competitor-intelligence - <https://github.com/doniaimad22-hue/apppulse-competitor-intelligence/edit/main/app.py>
-
 def offline_report(df, summ, issues, primary):
     comps = summ[summ.app_name != primary]
     me = summ[summ.app_name == primary].iloc[0]
