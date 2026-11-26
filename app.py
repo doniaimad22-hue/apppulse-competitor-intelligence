@@ -373,7 +373,7 @@ R = st.session_state.result
 if not R:
     c = st.columns(4)
     steps = [("1", "Search", "Find any app live on Google Play."), ("2", "Scrape", "Pull the newest reviews for every app."),
-             ("3", "Benchmark", "Logistic Regression vs Random Forest."), ("4", "Report", "Gemini 2.5 Flash executive brief.")]
+             ("3", "Benchmark", "Logistic Regression vs Random Forest."), ("4", "Report", "GeminiFlash executive brief.")]
     for col, (n, t, d) in zip(c, steps):
         col.markdown(f'<div class="step"><b>{n}</b><h4>{t}</h4><p>{d}</p></div>', unsafe_allow_html=True)
     st.info("👈 Use the sidebar to pick your app and competitors, then press **Run analysis**.")
