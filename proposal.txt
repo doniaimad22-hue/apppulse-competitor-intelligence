@@ -1,0 +1,9 @@
+Stop guessing why your app loses to competitors.
+
+I build AI-powered competitive-intelligence dashboards for mobile apps. Type any app name, pick 2-4 rivals, and my platform pulls live Google Play reviews, benchmarks two ML models, and flags critical complaints with a recall-optimised classifier before they hit your rating.
+
+You get: a side-by-side competitor dashboard, live risk scoring for any new review, and an AI-written executive report with prioritised fixes, all downloadable as TXT/CSV and deployed on your own cloud link.
+
+I deliver clean, documented code (GitHub + Streamlit Cloud), secure API-key handling, and a short walkthrough so your team can use it on day one.
+
+Available for a monthly monitoring retainer or a one-off custom build. Send me your app and three competitors, and I'll return a free sample report within 48 hours.
